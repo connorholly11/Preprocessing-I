@@ -135,6 +135,10 @@ body {
   height: 100%;
   font-size: 62.5%;
 }
+.experience {
+  display: flex;
+  justify-content: space-between;
+}
 .container {
   border: 1px solid red;
   margin: 5% 10%;
@@ -159,10 +163,14 @@ body {
 .container .workhistory h2 {
   font-size: 5rem;
 }
-.container .workhistory .workhistoryOne {
+.container .workhistory .workhistorycontent .workhistoryOne {
   display: flex;
   justify-content: space-between;
 }
-.container .workhistory .workhistoryOne h3 {
+.container .workhistory .workhistorycontent .workhistoryOne h3 {
   font-size: 2rem;
+}
+.container .workhistory .workhistorycontent li {
+  font-size: 1.5rem;
+  margin-left: 20px;
 }

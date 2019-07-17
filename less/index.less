@@ -61,6 +61,11 @@ html, body {
 //variables and mix-ins
 @greybackground:#D1D1D1;
 
+.experience{
+	display:flex;
+	justify-content:space-between;
+}
+
 //container
 .container{
 	border:1px solid red;
@@ -92,13 +97,21 @@ html, body {
 		h2{
 			font-size:5rem;
 		}//closes h2
-		.workhistoryOne{
-			display:flex;
-			justify-content:space-between;
-			h3{
+		.workhistorycontent{
+
+		
+			.workhistoryOne{
+				.experience;
+				h3{
 				font-size:2rem;
-		}//closes h3
-		}//closes workhistory1
+			}//closes h3
+			
+			}//closes workhistoryOne
+			li{
+				font-size:1.5rem;
+				margin-left:20px;
+			}//closes li
+		}//workhistorycontent
 	}//closes workhistory
 	
 }//closes container
