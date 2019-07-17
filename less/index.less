@@ -68,24 +68,26 @@ html, body {
 
 //container
 .container{
-	border:1px solid red;
 	margin: 5% 10%;
 	
 	nav{
-		display:flex;
-		justify-content:space-between;
+		.experience;
 		font-size:2rem;
 	}//close nav
+
+		a{
+			text-decoration: none;
+		}
+
+//starting top section
 	
 	.topsection{
-		border:1px solid blue;
 		margin: 20px 10px;
 		padding:50px;
 		background: @greybackground;
 
 		.imageintro{
-			display:flex;
-			justify-content:space-between;
+			.experience;
 			align-items: center;
 		}
 
@@ -95,10 +97,11 @@ html, body {
 		p{
 			font-size:2rem;
 		}//closes p
-	}//closes top section
+	}
+//closes top section
 
 
-
+//starts intro
 	.introduction{
 		h2{
 			font-size:3rem;
@@ -107,13 +110,14 @@ html, body {
 			font-size:1.5rem;
 		}
 
-	}//closes introduction
+	}
+//closes introduction
 	
 	
 	
 	
 	
-	//moving onto work history
+//moving onto work history
 
 	.workhistory{
 		h2{
@@ -135,7 +139,17 @@ html, body {
 			}//closes li
 		}//workhistorycontent
 	}//closes workhistory
-	
+	form{
+		flex-wrap:wrap;
+		justify-content:center;
+		h2{
+			font-size:2.5rem;
+			.experience;
+		}//closes h2
+		p{
+			font-size:1.5rem;
+		}
+	}//closes form
 }//closes container
 
 
