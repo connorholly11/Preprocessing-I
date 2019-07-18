@@ -54,6 +54,122 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	font-size:62.5%;
+	font-family:'Roboto', sans-serif;
+	font-family: 'Roboto Condensed', sans-serif;
 }
+
+//variables and mix-ins
+@greybackground:#D1D1D1;
+
+.experience{
+	display:flex;
+	justify-content:space-between;
+}
+
+.no-decoration{
+	text-decoration: none;
+}
+
+//container
+.container{
+	margin: 5% 10%;
+	
+	nav{
+		.experience;
+		font-size:2rem;
+	}//close nav
+
+		a{
+			.no-decoration;
+		}//closes a tag
+
+//starting top section
+	
+	.topsection{
+		margin: 20px 10px;
+		padding:50px;
+		background: @greybackground;
+		@media screen and (max-width:500px) {
+			display:flex;
+			flex-direction:column;
+		}
+
+		.imageintro{
+			.experience;
+			align-items: center;
+			@media screen and(max-width:500px){
+				display:flex;
+				flex-direction: column;
+			}
+		}//closes imageintro
+
+		h1{
+			font-size:6rem;
+		}//closes h1
+		p{
+			font-size:2rem;
+		}//closes p
+	}
+//closes top section
+
+
+//starts intro
+	.introduction{
+		h2{
+			font-size:3rem;
+		}//closes h2
+		p{
+			font-size:1.5rem;
+		}
+
+	}
+//closes introduction
+	
+	
+	
+	
+	
+//moving onto work history
+
+	.workhistory{
+		h2{
+			font-size:5rem;
+		}//closes h2
+		.workhistorycontent{
+
+		
+			.workhistoryOne{
+				.experience;
+				h3{
+				font-size:2rem;
+				@media screen and(max-width:500px){
+					font-size:1.5rem;
+				}
+			}//closes h3
+			
+			}//closes workhistoryOne
+			li{
+				font-size:1.5rem;
+				margin-left:20px;
+			}//closes li
+		}//workhistorycontent
+}//closes workhistory
+	
+	form{
+		background:@greybackground;
+		justify-content:center;
+		h2{
+			font-size:2.5rem;
+			.experience;
+		}//closes h2
+		p{
+			font-size:1.5rem;
+		}
+		
+	}//closes form
+
+}//closes container
+
 
