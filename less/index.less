@@ -66,6 +66,10 @@ html, body {
 	justify-content:space-between;
 }
 
+.no-decoration{
+	text-decoration: none;
+}
+
 //container
 .container{
 	margin: 5% 10%;
@@ -76,8 +80,8 @@ html, body {
 	}//close nav
 
 		a{
-			text-decoration: none;
-		}
+			.no-decoration;
+		}//closes a tag
 
 //starting top section
 	
@@ -85,11 +89,19 @@ html, body {
 		margin: 20px 10px;
 		padding:50px;
 		background: @greybackground;
+		@media screen and (max-width:500px) {
+			display:flex;
+			flex-direction:column;
+		}
 
 		.imageintro{
 			.experience;
 			align-items: center;
-		}
+			@media screen and(max-width:500px){
+				display:flex;
+				flex-direction: column;
+			}
+		}//closes imageintro
 
 		h1{
 			font-size:6rem;
@@ -130,6 +142,9 @@ html, body {
 				.experience;
 				h3{
 				font-size:2rem;
+				@media screen and(max-width:500px){
+					font-size:1.5rem;
+				}
 			}//closes h3
 			
 			}//closes workhistoryOne
@@ -138,10 +153,10 @@ html, body {
 				margin-left:20px;
 			}//closes li
 		}//workhistorycontent
-	}//closes workhistory
+}//closes workhistory
 	
 	form{
-		flex-wrap:wrap;
+		background:@greybackground;
 		justify-content:center;
 		h2{
 			font-size:2.5rem;
@@ -152,6 +167,7 @@ html, body {
 		}
 		
 	}//closes form
+
 }//closes container
 
 

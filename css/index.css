@@ -139,6 +139,9 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.no-decoration {
+  text-decoration: none;
+}
 .container {
   margin: 5% 10%;
 }
@@ -155,10 +158,22 @@ body {
   padding: 50px;
   background: #D1D1D1;
 }
+@media screen and (max-width: 500px) {
+  .container .topsection {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .container .topsection .imageintro {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (max-width: 500px) {
+  .container .topsection .imageintro {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .container .topsection h1 {
   font-size: 6rem;
@@ -182,12 +197,17 @@ body {
 .container .workhistory .workhistorycontent .workhistoryOne h3 {
   font-size: 2rem;
 }
+@media screen and (max-width: 500px) {
+  .container .workhistory .workhistorycontent .workhistoryOne h3 {
+    font-size: 1.5rem;
+  }
+}
 .container .workhistory .workhistorycontent li {
   font-size: 1.5rem;
   margin-left: 20px;
 }
 .container form {
-  flex-wrap: wrap;
+  background: #D1D1D1;
   justify-content: center;
 }
 .container form h2 {
